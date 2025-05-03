@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+html {
+  direction: rtl;
+  text-align: right;
+  font-family: "Cairo", sans-serif !important;
+}
+
+body {
+  font-family: "Cairo", sans-serif !important;
+  overflow-x: hidden;
+
+}
+
+
+/* ========================================================= */
+.box-text-carousel-item {
+  right: 0;
+}
+
+.product-Favorite-Categories {
+  left: auto;
+  right: 1rem;
+}
+
+.icon-Search-nav {
+  left: auto;
+  right: 8px;
+}
+
+.product-Favorite {
+  right: auto;
+  left: 1rem;
+}
+
+.bids {
+  right: 1rem;
+  left: auto;
+}
+
+.box-text-Categories a span {
+  transform: rotate(180deg);
+}
+
+.box-link-page ul li span i {
+  transform: rotate(180deg);
+}
+
+.box-item-Auctions .owl-carousel .owl-nav button.owl-next {
+  left: 38%;
+  right: auto;
+}
+
+.box-item-Auctions .owl-carousel .owl-nav button.owl-prev {
+  right: 38%;
+  left: auto;
+}
+
+.box-slider-Brands .owl-carousel .owl-nav button.owl-next {
+  left: -50px;
+  right: auto;
+}
+
+.box-slider-Brands .owl-carousel .owl-nav button.owl-prev {
+  right: -50px;
+  /* top: auto; */
+  left: auto;
+  /* background-color: aqua; */
+}
+
+.box-Search-nav .Search-nav {
+  /* min-width: 160%; */
+}
+
+.box-About-this-item .accordion-button::after {
+  margin-right: auto;
+  margin-left: inherit;
+}
+
+.carousel-control-next {
+  left: 10px;
+  right: auto;
+  transform: rotateY(180deg);
+}
+
+.carousel-control-prev {
+  right: 10px;
+  left: auto;
+  transform: rotateY(180deg);
+}
+
+.box-Modal-LogIn .box-close-modal {
+  left: 1rem;
+  right: auto;
+}
+
+.offcanvas.offcanvas-end {
+  right: auto;
+  left: 0;
+}
+
+.offcanvas.offcanvas-end {
+  transform: translateX(-100%);
+}
+
+.box-nav-2 ul li::after {
+  transform: rotate(180deg);
+}
+.icon-arrow-filter i{
+  transform: rotate(180deg);
+  /* background-color: brown; */
+}
+.box-tab-My-Account .box-links-tab .nav-link {
+  border-right: 2px solid transparent;
+  border-left:none ;
+
+}
+.box-tab-My-Account .box-links-tab .nav-link.active{
+  border-right: 2px solid #CB8933;
+  border-left:none ;
+}
+.box-tab-My-Account .box-links-tab .nav-link:hover {
+  background-color: #FAF9F7;
+  border-right: 2px solid #CB8933;
+  border-left: none;
+}
+.box-input-SAR span {
+  left: 1rem;
+  right: auto;
+}
+
+.btn-back-Phone{
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 991px) {
+  .box-list-link-nav-1 {
+    left: -100%;
+    right: auto;
+  }
+
+  .box-list-link-nav-1.open {
+    left: 0;
+    right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .box-slider-Brands .owl-carousel .owl-nav button.owl-next {
+    left: 38%;
+    right: auto;
+    top: auto;
+  }
+
+  .box-slider-Brands .owl-carousel .owl-nav button.owl-prev {
+    right: 38%;
+    top: auto;
+    left: auto;
+  }
+
+  .box-Modal-LogIn .box-close-modal {
+    left: 0.5rem;
+    right: auto;
+  }
+}

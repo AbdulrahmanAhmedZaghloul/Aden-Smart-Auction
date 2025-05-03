@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تاريخ المزايدات</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>تاريخ المزايدات</h1>
+  </header>
+
+  <main class="container">
+    <table class="bid-table" style="width: 100%; border-collapse: collapse;">
+      <thead>
+        <tr style="background: #eee;">
+          <th style="padding: 10px; border: 1px solid #ccc;">المنتج</th>
+          <th style="padding: 10px; border: 1px solid #ccc;">السعر المزايد</th>
+          <th style="padding: 10px; border: 1px solid #ccc;">التاريخ</th>
+        </tr>
+      </thead>
+      <tbody id="bidHistory">
+        <!-- سيتم تعبئة البيانات هنا -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="mock-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

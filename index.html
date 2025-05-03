@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>موقع المزادات</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>مزادك الإلكتروني</h1>
+    <nav>
+      <a href="register.html">إنشاء حساب</a>
+      <a href="login.html">تسجيل الدخول</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="text-align: center; padding: 2rem 0;">
+      <h2>ابدأ البيع أو الشراء الآن!</h2>
+      <p style="margin: 1rem 0;">منصة آمنة وسهلة للمزادات عبر الإنترنت</p>
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="seller-dashboard.html" class="btn">أنا بائع</a>
+        <a href="buyer-dashboard.html" class="btn">أنا مشتري</a>
+      </div>
+    </section>
+
+    <h2 style="margin-top: 2rem;">المزادات النشطة</h2>
+    <div id="auctionsList"></div>
+  </main>
+
+  <footer style="text-align: center; padding: 1rem; background: #2c3e50; color: white; margin-top: 2rem;">
+    <p>&copy; 2025 مزادك الإلكتروني</p>
+  </footer>
+
+  <script src="mock-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

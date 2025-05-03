@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>لوحة البائع</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>مرحباً، البائع</h1>
+    <nav>
+      <a href="seller-dashboard.html">الرئيسية</a>
+      <a href="bid-history.html">تاريخ المزايدات</a>
+      <a href="#">الحساب</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>إضافة منتج جديد</h2>
+    <form id="addProductForm">
+      <input type="text" name="name" placeholder="اسم المنتج" required>
+      <textarea name="description" placeholder="الوصف"></textarea>
+      <input type="file" name="image">
+      <input type="number" name="startingPrice" placeholder="الحد الأدنى للسعر" required>
+      <input type="datetime-local" name="endTime" required>
+      <button type="submit" class="btn">نشر المنتج</button>
+    </form>
+
+    <h2 style="margin-top: 2rem;">منتجاتي</h2>
+    <div id="myProducts"></div>
+  </main>
+
+  <script src="mock-data.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    // ربط نموذج إضافة المنتج
+    document.getElementById("addProductForm").addEventListener("submit", submitAddProductForm);
+  </script>
+</body>
+</html>

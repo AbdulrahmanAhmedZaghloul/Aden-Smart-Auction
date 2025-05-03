@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تقييم البائع</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>تقييم البائع</h1>
+  </header>
+
+  <main class="form-container">
+    <form id="reviewForm">
+      <h3>قيم البائع:</h3>
+      <div class="stars" style="margin: 1rem 0;">
+        <input type="radio" name="rating" value="1">★
+        <input type="radio" name="rating" value="2">★★
+        <input type="radio" name="rating" value="3">★★★
+        <input type="radio" name="rating" value="4">★★★★
+        <input type="radio" name="rating" value="5">★★★★★
+      </div>
+      <textarea placeholder="تعليقك..."></textarea>
+      <button type="button" onclick="submitReview()" class="btn">إرسال التقييم</button>
+    </form>
+  </main>
+
+  <script src="mock-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

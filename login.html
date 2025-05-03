@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل الدخول</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>تسجيل الدخول</h1>
+  </header>
+
+  <main class="form-container">
+    <form id="loginForm">
+      <input type="email" placeholder="البريد الإلكتروني" required>
+      <input type="password" placeholder="كلمة المرور" required>
+      <button type="submit" class="btn">دخول</button>
+      <p>ليس لديك حساب؟ <a href="register.html">أنشئ حسابًا</a></p>
+    </form>
+  </main>
+
+  <script src="mock-data.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    // معالجة تسجيل الدخول
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const email = this.querySelector("input[type='email']").value;
+      const password = this.querySelector("input[type='password']").value;
+      login(email, password);
+    });
+  </script>
+</body>
+</html>

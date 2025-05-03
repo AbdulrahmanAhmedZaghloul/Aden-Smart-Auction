@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الدفع</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>الدفع</h1>
+  </header>
+
+  <main class="form-container">
+    <h2>اختر طريقة الدفع</h2>
+    <form id="paymentForm">
+      <select required>
+        <option value="">اختر طريقة الدفع</option>
+        <option value="visa">فيزا</option>
+        <option value="paypal">PayPal</option>
+        <option value="stc">STC Pay</option>
+      </select>
+      <button type="button" onclick="processPayment()" class="btn">الدفع</button>
+    </form>
+  </main>
+
+  <script src="mock-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
